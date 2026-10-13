@@ -19,7 +19,7 @@ Route::middleware('guest')->group(function () {
     Route::post('/login', [LoginController::class, 'login']);
 
     // Route Register
-    Route::get('/register', function () {
+    Route::get('auth/register', function () {
         return view('auth.register');
     })->name('register');
 
